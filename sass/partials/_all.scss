@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+$grey: rgb(72, 70, 73);
+
+.grey{background-color: $grey;}
+
+
+*{
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    list-style-type:none;
+}
 body{
     margin:0px;
 }
+
+.cont{
+    margin: auto;
+}
+

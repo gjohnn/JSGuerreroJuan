@@ -1,5 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+.grey {
+  background-color: #484649; }
+
+* {
+  font-family: 'Julius Sans One', sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style-type: none; }
+
 body {
   margin: 0px; }
+
+.cont {
+  margin: auto; }
 
 header {
   background-color: #484649; }
@@ -8,7 +21,95 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  justify-content: space-between; }
+  .headerr .logo {
+    display: flex;
+    align-items: center; }
+    .headerr .logo h1 {
+      font-size: 20px;
+      margin: 0px; }
+
+footer {
+  background-color: #484649;
   color: white; }
-  .headerr-title {
-    font-size: 20px;
-    margin: 0px; }
+
+.roww {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 10px; }
+
+.footer {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .footer ul {
+    list-style: none; }
+  .footer-col {
+    color: white;
+    margin-bottom: 1rem;
+    padding: 0rem;
+    background-color: none;
+    display: inline-block;
+    width: auto; }
+    .footer-col ul {
+      padding: 0px;
+      margin: 0px; }
+    .footer-col li {
+      padding: 0rem;
+      margin: 0;
+      color: grey;
+      transition: all 0.5s; }
+    .footer-col li:hover {
+      padding-left: 1px;
+      color: white; }
+    .footer-col a {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      color: grey;
+      transition: all 0.5s; }
+    .footer-col a:hover {
+      color: white; }
+    .footer-col h4 {
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      margin-bottom: 15px;
+      position: relative;
+      padding: 10px 0px 10px 0px;
+      text-align: start;
+      text-transform: capitalize;
+      border-bottom: solid white 2px; }
+    .footer-col .social-links {
+      padding: 0px; }
+      .footer-col .social-links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+      .footer-col .social-links a {
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        display: inline-block;
+        background-color: grey;
+        margin-right: 10px;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        transition: all 0.5s; }
+      .footer-col .social-links a:hover {
+        background-color: white; }
+      .footer-col .social-links i {
+        text-align: center;
+        height: 40px;
+        width: 40px;
+        color: white;
+        background: none;
+        transition: all 0.5s; }
+      .footer-col .social-links i:hover {
+        color: black; }

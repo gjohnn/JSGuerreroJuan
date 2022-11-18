@@ -1,5 +1,5 @@
 header{
-    background-color: rgb(72, 70, 73);
+    background-color: $grey;
 }
 
 .headerr{
@@ -7,8 +7,12 @@ header{
     justify-content: center;
     align-items: center;
     color:white;
-    &-title{
+    justify-content: space-between;
+    .logo{
+        display: flex;
+        align-items: center;
+        h1{
         font-size: 20px;
-        margin: 0px;
+        margin: 0px;}
     }
 }
