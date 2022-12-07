@@ -78,7 +78,7 @@ for(i=2;i>=0;i--){
 while(ing !="si"){
     ing=prompt("y ahora?")
 }
-alert("a verr, sii")*/
+alert("a verr, sii")
 let nomalum = prompt("Ingrese nombre del alumno")
 let nota = parseInt(prompt("Ingrese nota del alumno"))
 let cont=0
@@ -91,4 +91,34 @@ while(nota!=0){
 }
 console.log("El alumno " + nomalum + " tiene un promedio de "+ nototal/cont)
 
+*/
+let nomprod = prompt("Ingrese el nombre del producto")
+while (nomprod==""){
+    nomprod = parseInt(prompt("Ingrese el precio correcto del producto"));
+}
+let precio = parseInt(prompt("Ingrese el precio del producto"));
+let preciof= 0;
+while (precio==0){
+     precio = parseInt(prompt("Ingrese el precio correcto del producto"));
+}
+let cuota = parseInt(prompt("Ingrese las cuotas (3, 6 o 12) en las que desea pagar, ingrese 0 si desea en efectivo/transferencia bancaria."));
+while((cuota<0) ||(cuota>12)|| (cuota==1) || (cuota==2) || (cuota>=4 && cuota<=5) || (cuota>=7 && cuota<=11)){
+    cuota = parseInt(prompt("Ingrese las cuotas (3, 6 o 12) en las que desea pagar, ingrese 0 si desea en efectivo/transferencia bancaria."));
+}
 
+if (cuota == 0){
+        preciof = precio*0.95
+        console.log("El producto ",nomprod," tiene un 5% de descuento: ",preciof);
+}else if (cuota == 3){    
+            preciof = precio*1.15
+            console.log("El producto ",nomprod," tiene un 15% de interés: $",preciof);
+}else if (cuota == 6){
+            preciof = precio*1.35
+            console.log("El producto ",nomprod," tiene un 15% de interés: $",preciof);
+}else if (cuota == 6){
+            preciof = precio*1.35
+            console.log("El producto ",nomprod," tiene un 35% de interés: $",preciof);
+}else if (cuota == 12){
+            preciof = precio*1.70
+            console.log("El producto ",nomprod," tiene un 70% de interés: $",preciof);
+}
